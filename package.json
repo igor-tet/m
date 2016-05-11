@@ -1,0 +1,27 @@
+{
+  "name": "m",
+  "version": "1.0.1",
+  "description": "Mongoose Query",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/igor-tet/m.git"
+  },
+  "keywords": [
+    "mongoose"
+  ],
+  "author": "Igor Teterevlev <welcome.novamedia@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-tet/m-parser/issues"
+  },
+  "homepage": "https://github.com/igor-tet/m",
+  "devDependencies": {},
+  "dependencies": {
+    "async-each-series": "^1.1.0",
+    "underscore": "^1.8.3"
+  }
+}
