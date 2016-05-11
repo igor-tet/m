@@ -1,6 +1,6 @@
 {
-  "name": "cladius-m",
-  "version": "1.0.1",
+  "name": "nm-m",
+  "version": "1.0.4",
   "description": "Mongoose Query",
   "main": "index.js",
   "repository": {
