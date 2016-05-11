@@ -1,11 +1,8 @@
 {
-  "name": "m",
+  "name": "cladius-m",
   "version": "1.0.1",
   "description": "Mongoose Query",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/igor-tet/m.git"
@@ -13,10 +10,10 @@
   "keywords": [
     "mongoose"
   ],
-  "author": "Igor Teterevlev <welcome.novamedia@gmail.com>",
+  "author": "Igor Teterevlev <igor.teterevlyov@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/igor-tet/m-parser/issues"
+    "url": "https://github.com/igor-tet/m/issues"
   },
   "homepage": "https://github.com/igor-tet/m",
   "devDependencies": {},

@@ -120,6 +120,7 @@ function findOne(model, query, _ecb, _scb, params) {
     }
     model
         .findOne(query)
+        .sort(params.sort)
         .populate(params.populate || '')
         .exec(function (err, data) {
             data = data && data.publish && params.publish ? data.publish() : data
