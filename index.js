@@ -267,11 +267,10 @@ function _findCreateUpdate(model, query, _ecb, _scb, params, upsert) {
 }
 
 
-function findCreate(model, query, new_query, _ecb, _scb, params) {
-	new_query = _.extend(query, new_query);
+function findCreate(model, query, _ecb, _scb, params) {
 	findOne(model, query, function (code, err) {
 		if (code == 397) {
-			create(model, new_query, _ecb, _scb, params)
+			create(model, query, _ecb, _scb, params)
 		} else {
 			ecb(code, err, _ecb)
 		}
@@ -284,9 +283,9 @@ function findRemove(model, query, _ecb, _scb) {
 		var _data = [];
 		var index = -1;
 		var count = items.length;
-		
+
 		cb()
-		
+
 		items && items.forEach(function (item) {
 			item.remove(function (err) {
 				if (err) {
@@ -298,8 +297,8 @@ function findRemove(model, query, _ecb, _scb) {
 				cb()
 			})
 		});
-		
-		
+
+
 		function cb() {
 			index++;
 			if (index == count) {
@@ -352,7 +351,7 @@ module.exports = {
 	scb: scb,
 	found_scb: found_scb,
 	getBody: getBody,
-	
+
 	count: count,
 	find: find,
 	findLean: findLean,
@@ -362,11 +361,12 @@ module.exports = {
 	insertMany: insertMany,
 	findRemove: findRemove,
 	_findRemove: _findRemove,
-	
+
 	findUpdate: findUpdate,
 	_findCreateUpdate: _findCreateUpdate,
 	findCreateUpdate: findCreateUpdate,
 	findCreate: findCreate,
+	// findCreate2: findCreate2,
 	createToken: createToken,
 	
 	extend: _.extend,
